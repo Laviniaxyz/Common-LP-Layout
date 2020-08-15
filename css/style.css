@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 3px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.hero {
+  background: url(../images/home/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 2;
+}
+
+.icons {
+  padding: 30px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 15px;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns h2,
+.text-cases h2,
+.text-team h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4,
+.text-cases h4,
+.text-team h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.flex-columns p,
+.text-cases p,
+.text-team p {
+  margin: 20px 0;
+}
+
+.text-cases,
+.text-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px 0 20px;
+  line-height: 2;
+}
+
+.photo-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.photo-items .photo-cases {
+  flex: 1;
+  flex-basis: 25%;
+  padding: 5px;
+}
+
+.photo-items .photo-cases2 {
+  flex: 1;
+  flex-basis: 25%;
+  padding: 15px;
+}
+
+.photo-cases img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.job-title .name {
+  font-weight: bold;
+}
+
+.job-title p {
+  margin-bottom: 0;
+}
+
+.person img {
+  border-radius: 50%;
+}
+
+.callback-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.callback-form input {
+  width: 100%;
+  border: #f5f5f5 1px solid;
+  padding: 15px 5px;
+  margin: 10px;
+}
+
+.callback-form input:focus {
+  outline-color: #28a745;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.footer i {
+  padding: 10px;
+  color: white;
+}
+
+.footer i:hover {
+  color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav {
+    padding: 5px 0;
+    max-width: 400px;
+  }
+
+  nav ul {
+    display: inline-block;
+  }
+
+  .flex-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-columns .column {
+    width: 100%;
+    flex: 100%;
+  }
+
+  .flex-columns .column-2 {
+    padding: 30px 60px;
+  }
+
+  .photo-items .photo-cases {
+    flex-basis: 100%;
+  }
+
+  .items-team .photo-items {
+    flex-direction: column;
+  }
+
+  .photo-cases2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+}
